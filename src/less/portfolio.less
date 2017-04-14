@@ -16,6 +16,30 @@
       margin-left: 24px;
     }
   }
+  &:nth-child(3n-2) {
+    .image-container {
+      background-color: @green;
+    }
+    .description-container {
+      background-color: @red;
+    }
+  }
+  &:nth-child(3n-1) {
+    .image-container {
+      background-color: @blue;
+    }
+    .description-container {
+      background-color: @yellow;
+    }
+  }
+  &:nth-child(3n) {
+    .image-container {
+      background-color: @orange;
+    }
+    .description-container {
+      background-color: @pink;
+    }
+  }
 }
 
 .image-container {
@@ -23,6 +47,7 @@
   height: 100%;
   overflow: hidden;
   margin-right: 24px;
+  padding: 20px;
   background-color: red;
 }
 
@@ -36,5 +61,6 @@
   width: 30%;
   min-width: 220px;
   height: 100%;
+  padding: 20px;
   background-color: green;
 }
