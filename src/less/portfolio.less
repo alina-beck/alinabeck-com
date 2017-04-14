@@ -1,0 +1,40 @@
+.portfolio {
+  min-height: 100vh;
+  margin-left: @sidebar-width;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 340px;
+  margin: 24px;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    .image-container {
+      margin-right: 0;
+      margin-left: 24px;
+    }
+  }
+}
+
+.image-container {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  margin-right: 24px;
+  background-color: red;
+}
+
+.image {
+  display: block;
+  height: 80%;
+  margin: auto;
+}
+
+.description-container {
+  width: 30%;
+  min-width: 220px;
+  height: 100%;
+  background-color: green;
+}
