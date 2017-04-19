@@ -1,60 +1,132 @@
 .sidebar {
+  height: @headerHeight;
+  width: 100vw;
+  padding: @tinyGap;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   display: flex;
-  flex-direction: column;
+  flex-flow: row nowrap;
   justify-content: space-between;
-  width: @sidebar-width;
-  height: 100vh;
-  padding-top: 24px;
+  background-color: @white;
   &__title {
-    width: 100%;
     margin: 0;
-    text-align: right;
-    line-height: 0.8;
     color: @darkgrey;
+    font-size: 40px;
   }
   &__text {
-    width: 80%;
-    margin: 4px;
-    text-align: right;
-    line-height: 1.5;
+    margin: @tinyGap;
+    margin-bottom: @normalGap;
+    line-height: @normalLine;
+  }
+  &__button {
+    height: @headerHeight - (2 * @tinyGap);
+    width: @headerHeight - (2 * @tinyGap);
+    background-color: @darkgrey;
+    color: @white;
+    font-size: 30px;
+    font-weight: @regular;
+  }
+  @media @mqWidthTablet {
+    height: 100vh;
+    width: @sidebarWidth;
+    padding-top: @normalGap;
+
+    flex-flow: column nowrap;
+    &__title {
+      width: 100%;
+      text-align: right;
+      font-size: 60px;
+      line-height: 0.8;
+    }
+    &__text {
+      text-align: right;
+    }
+    &__button {
+      display: none;
+    }
   }
 }
 
 .navigation {
+  width: 100vw;
+  padding: @normalGap 0;
+  position: fixed;
+  top: @headerHeight;
+  right: 0;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: flex-end;
+  background-color: @white;
+  transform: translateX(100%);
+  transition: transform .3s;
+  &--open {
+    transform: translateX(0);
+  }
+  @media @mqWidthTablet {
+    width: auto;
+    padding: 0;
+    position: static;
+    justify-content: flex-end;
+    background: none;
+    transform: translateX(0);
+  }
+  @media @mqHeightDesktop {
+    flex-flow: column nowrap;
+  }
 }
 
 .filter {
   flex-grow: 0;
-  margin: 4px;
-  padding: 4px 8px;
-  font-size: 14px;
+  margin: @tinyGap;
+  padding: 2 * @tinyGap;
+  font-size: @buttonText;
+  line-height: @buttonLine;
   background-color: @darkgrey;
   color: @white;
-  &:first-child {
-    margin-top: 0;
-  }
 }
 
 .contact-wrapper {
+  padding: @normalGap;
+  position: fixed;
+  top: @headerHeight;
+  left: 0;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-flow: column nowrap;
+  background-color: @white;
+  transform: translateX(-100%);
+  transition: transform .3s;
+  &--open {
+    transform: translateX(0);
+  }
+  @media @mqWidthTablet {
+    width: 80%;
+    padding: 0;
+    position: static;
+    align-self: flex-end;
+    align-items: flex-end;
+    transform: translateX(0);
+  }
 }
 
 .social {
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   &__button {
-    margin: 4px;
-    padding: 4px 8px;
-    font-size: 14px;
+    height: @squareButtonSize;
+    width: @squareButtonSize;
+    margin: @tinyGap;
+    margin-right: @normalGap;
+    padding: 2 * @tinyGap;
+    font-size: @buttonText;
+    line-height: @buttonLine;
     background-color: @darkgrey;
     color: @white;
+    @media @mqWidthTablet {
+      margin: @tinyGap;
+      margin-left: @normalGap;
+    }
   }
 }
