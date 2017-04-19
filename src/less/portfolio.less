@@ -9,11 +9,16 @@
   flex-wrap: nowrap;
   height: 340px;
   margin: 24px;
+  text-align: right;
   &:nth-child(even) {
     flex-direction: row-reverse;
+    text-align: left;
     .image-container {
       margin-right: 0;
       margin-left: 24px;
+    }
+    .project__tags {
+      flex-direction: row-reverse;
     }
   }
   &:nth-child(3n-2) {
@@ -43,6 +48,7 @@
 }
 
 .image-container {
+  display: flex;
   width: 70%;
   height: 100%;
   overflow: hidden;
@@ -53,14 +59,28 @@
 
 .image {
   display: block;
-  height: 80%;
+  max-height: 100%;
+  max-width: 100%;
   margin: auto;
 }
 
 .description-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: 30%;
   min-width: 220px;
   height: 100%;
   padding: 20px;
   background-color: green;
+}
+
+.project__tags {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
 }
