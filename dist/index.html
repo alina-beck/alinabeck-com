@@ -11,18 +11,18 @@
 <body>
 
   <aside class="sidebar">
-    <nav class="navigation">
-      <button class="filter">Web and App Design</button>
-      <button class="filter">Corporate Identity</button>
-      <button class="filter">Print Design</button>
-      <button class="filter">Web and App Development</button>
+    <nav class="navigation" id="filter-box">
+      <button class="filter" data-filter="web-design">Web and App Design</button>
+      <button class="filter" data-filter="identity">Corporate Identity</button>
+      <button class="filter" data-filter="print">Print Design</button>
+      <button class="filter" data-filter="web-development">Web and App Development</button>
       <button class="filter">Logo</button>
       <button class="filter">Product Management</button>
       <button class="filter">Marketing Strategy</button>
       <button class="filter">Video Production</button>
       <button class="filter">Free Code Camp</button>
     </nav>
-    <section class="contact-wrapper">
+    <section class="contact-wrapper" id="about-box">
       <p class="sidebar__text">It's not easy to put a label on what I do – but I am certainly freelancing while travelling the world. If you like what you see, please get in touch!</p>
       <nav class="social">
         <button class="social__button">@</button>
@@ -30,14 +30,14 @@
         <button class="social__button">git</button>
       </nav>
     </section>
-    <button class="sidebar__button">?</button>
+    <button class="sidebar__button" id="toggle-about">?</button>
     <h1 class="sidebar__title">Alina Beck</h1>
-    <button class="sidebar__button">+</button>
+    <button class="sidebar__button" id="toggle-filter">+</button>
   </aside>
 
   <main class="portfolio">
 
-    <article class="project">
+    <article class="project" data-tags="print">
       <section class="image-container">
         <img class="image" src="../assets/img/book-cover.png">
       </section>
@@ -51,7 +51,7 @@
       </section>
     </article>
 
-    <article class="project">
+    <article class="project" data-tags="print">
       <section class="image-container">
         <img class="image" src="../assets/img/typo-handout.png">
       </section>
@@ -64,7 +64,8 @@
         </nav>
       </section>
     </article>
-    <article class="project">
+
+    <article class="project" data-tags="marketing print">
       <section class="image-container">
         <img class="image" src="../assets/img/dm.png">
       </section>
@@ -77,7 +78,8 @@
         </nav>
       </section>
     </article>
-    <article class="project">
+
+    <article class="project" data-tags="logo print">
       <section class="image-container">
         <img class="image" src="../assets/img/vierkant.png">
       </section>
@@ -90,7 +92,8 @@
         </nav>
       </section>
     </article>
-    <article class="project">
+
+    <article class="project" data-tags="web-design web-development">
       <section class="image-container">
         <img class="image" src="../assets/img/photo-calendar.png">
       </section>
@@ -99,11 +102,12 @@
         <h3>2017</h3>
         <p class="project__description">Personal blog. Uses Google APIs to load contents. Includes a small CMS for adding blog posts, a commenting function and email alerts.</p>
         <nav class="project__tags">
-          <button class="filter">Web and App Design</button><button class="filter">Web and App Development</button>
+          <button class="filter" data-filter="web-design">Web and App Design</button><button class="filter">Web and App Development</button>
         </nav>
       </section>
     </article>
-    <article class="project">
+
+    <article class="project" data-tags="web-development">
       <section class="image-container">
         <img class="image" src="https://image.freepik.com/free-icon/apple-logo_318-40184.jpg">
       </section>
@@ -112,15 +116,8 @@
         <p class="project__description">Designed a logo blah blah blah. Designed a logo blah blah blah.</p>
       </section>
     </article>
-    <article class="project">
-      <section class="image-container">
-        <img class="image" src="https://image.freepik.com/free-icon/apple-logo_318-40184.jpg">
-      </section>
-      <section class="description-container">
-        <h2>Cantina International</h2>
-        <p>Designed a logo blah blah blah. Designed a logo blah blah blah.</p>
-      </section>
-    </article>
+
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
