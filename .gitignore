@@ -1,4 +1,2 @@
-dist/*
-!/dist/index.html
-!/dist/script.js
+dist/main.css
 raw-graphics
