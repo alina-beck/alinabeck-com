@@ -16,11 +16,11 @@
       <button class="filter" data-filter="identity">Corporate Identity</button>
       <button class="filter" data-filter="print">Print Design</button>
       <button class="filter" data-filter="web-development">Web and App Development</button>
-      <button class="filter">Logo</button>
-      <button class="filter">Product Management</button>
-      <button class="filter">Marketing Strategy</button>
-      <button class="filter">Video Production</button>
-      <button class="filter">Free Code Camp</button>
+      <button class="filter" data-filter="logo">Logo</button>
+      <button class="filter" data-filter="product">Product Management</button>
+      <button class="filter" data-filter="marketing">Marketing Strategy</button>
+      <button class="filter" data-filter="video">Video Production</button>
+      <button class="filter" data-filter="fcc">Free Code Camp</button>
     </nav>
     <section class="contact-wrapper" id="about-box">
       <p class="sidebar__text">It's not easy to put a label on what I do – but I am certainly freelancing while travelling the world. If you like what you see, please get in touch!</p>
@@ -37,58 +37,20 @@
 
   <main class="portfolio">
 
-    <article class="project" data-tags="print">
+    <article class="project" data-tags="web-design web-development">
       <section class="image-container">
-        <img class="image" src="../assets/img/book-cover.png">
+        <a href="https://alexkott.com/adopt-a-tree" target="_blank">
+          <img class="image" src="../assets/img/adopt-a-tree.png">
+        </a>
       </section>
       <section class="description-container">
-        <h2>Book Cover</h2>
-        <h3>2013</h3>
-        <p class="project__description">Given the author name and title I came up with a story and designed a book cover to convey the narrative. I imagined a young man entangled in gang wars who one day decides to quit and make something of himself.</p>
+        <h2>Adopt a Tree</h2>
+        <h3>2017</h3>
+        <p class="project__description">Designed and developed this quick-and-dirty prototype at a 48h hackathon. The mobile app aims to help people protect trees in Tbilisi.</p>
         <nav class="project__tags">
-          <button class="filter">Print Design</button>
-        </nav>
-      </section>
-    </article>
-
-    <article class="project" data-tags="print">
-      <section class="image-container">
-        <img class="image" src="../assets/img/typo-handout.png">
-      </section>
-      <section class="description-container">
-        <h2>Typography</h2>
-        <h3>2012</h3>
-        <p class="project__description">This is a handout I designed for my talk about typography. It was not designed to exhibit "good" typography but the different effects typography can have.</p>
-        <nav class="project__tags">
-          <button class="filter">Print Design</button>
-        </nav>
-      </section>
-    </article>
-
-    <article class="project" data-tags="marketing print">
-      <section class="image-container">
-        <img class="image" src="../assets/img/dm.png">
-      </section>
-      <section class="description-container">
-        <h2>Brand Analysis</h2>
-        <h3>2013</h3>
-        <p class="project__description">Analysed two home brands of a drugstore. To reflect the comparison throughout the paper I went with a two-column layout in landscape orientation.</p>
-        <nav class="project__tags">
-          <button class="filter">Marketing Strategy</button><button class="filter">Print Design</button>
-        </nav>
-      </section>
-    </article>
-
-    <article class="project" data-tags="logo print">
-      <section class="image-container">
-        <img class="image" src="../assets/img/vierkant.png">
-      </section>
-      <section class="description-container">
-        <h2>Vierkant</h2>
-        <h3>2016</h3>
-        <p class="project__description">Designed a logo and concept brochure for a creative building project.</p>
-        <nav class="project__tags">
-          <button class="filter">Logo</button><button class="filter">Print Design</button>
+          <button class="filter" data-filter="web-design">Web and App Design</button>
+          <button class="filter" data-filter="web-development">Web and App Development</button>
+          <button class="filter" data-filter="product">Product Management</button>
         </nav>
       </section>
     </article>
@@ -102,18 +64,119 @@
         <h3>2017</h3>
         <p class="project__description">Personal blog. Uses Google APIs to load contents. Includes a small CMS for adding blog posts, a commenting function and email alerts.</p>
         <nav class="project__tags">
-          <button class="filter" data-filter="web-design">Web and App Design</button><button class="filter">Web and App Development</button>
+          <button class="filter" data-filter="web-design">Web and App Design</button>
+          <button class="filter" data-filter="web-development">Web and App Development</button>
         </nav>
       </section>
     </article>
 
-    <article class="project" data-tags="web-development">
+    <article class="project" data-tags="web-design web-development">
       <section class="image-container">
-        <img class="image" src="https://image.freepik.com/free-icon/apple-logo_318-40184.jpg">
+        <a href="https://invis.io/GZBI2NF4Y" target="_blank">
+          <img class="image" src="../assets/img/easypeasy.png">
+        </a>
+      </section>
+      <section class="description-container">
+        <h2>EasyPeasy App</h2>
+        <h3>2017</h3>
+        <p class="project__description">Designed a prototype in one day, proposing new features and a redesign for an app that encourages parents to play meaningful games with their children.</p>
+        <nav class="project__tags">
+          <button class="filter" data-filter="web-design">Web and App Design</button>
+          <button class="filter" data-filter="product">Product Management</button>
+        </nav>
+      </section>
+    </article>
+
+    <article class="project" data-tags="web-design web-development">
+      <section class="image-container">
+        <a href="https://timevillage.org" target="_blank">
+          <img class="image" src="../assets/img/timevillage.png">
+        </a>
+      </section>
+      <section class="description-container">
+        <h2>Time Village</h2>
+        <h3>2016</h3>
+        <p class="project__description">Worked with this social startup for 1.5 years. Planned, designed and developed their mobile-first web app, among other things.</p>
+        <nav class="project__tags">
+          <button class="filter" data-filter="web-design">Web and App Design</button>
+          <button class="filter" data-filter="web-development">Web and App Development</button>
+          <button class="filter" data-filter="product">Product Management</button>
+        </nav>
+      </section>
+    </article>
+
+    <article class="project" data-tags="logo print">
+      <section class="image-container">
+        <img class="image" src="../assets/img/vierkant.png">
+      </section>
+      <section class="description-container">
+        <h2>Vierkant</h2>
+        <h3>2016</h3>
+        <p class="project__description">Designed a logo and concept brochure for a creative building project.</p>
+        <nav class="project__tags">
+          <button class="filter" data-filter="logo">Logo</button>
+          <button class="filter" data-filter="print">Print Design</button>
+        </nav>
+      </section>
+    </article>
+
+    <article class="project" data-tags="marketing print">
+      <section class="image-container">
+        <img class="image" src="../assets/img/dm.png">
+      </section>
+      <section class="description-container">
+        <h2>Brand Analysis</h2>
+        <h3>2013</h3>
+        <p class="project__description">Analysed two home brands of a drugstore. To reflect the comparison throughout the paper I went with a two-column layout in landscape orientation.</p>
+        <nav class="project__tags">
+          <button class="filter" data-filter="marketing">Marketing Strategy</button>
+          <button class="filter" data-filter="print">Print Design</button>
+        </nav>
+      </section>
+    </article>
+
+    <article class="project" data-tags="print">
+      <section class="image-container">
+        <img class="image" src="../assets/img/book-cover.png">
+      </section>
+      <section class="description-container">
+        <h2>Book Cover</h2>
+        <h3>2013</h3>
+        <p class="project__description">Given the author name and title I came up with a story and designed a book cover to convey the narrative. I imagined a young man entangled in gang wars who one day decides to quit and make something of himself.</p>
+        <nav class="project__tags">
+          <button class="filter" data-filter="print">Print Design</button>
+        </nav>
+      </section>
+    </article>
+
+    <article class="project" data-tags="web-design web-development">
+      <section class="image-container">
+        <img class="image" src="../assets/img/cantina.png">
       </section>
       <section class="description-container">
         <h2>Cantina International</h2>
-        <p class="project__description">Designed a logo blah blah blah. Designed a logo blah blah blah.</p>
+        <h3>2013</h3>
+        <p class="project__description">Developed a corporate design and communication plan based on a brand and business analysis for this social catering company.</p>
+        <nav class="project__tags">
+          <button class="filter" data-filter="web-design">Web and App Design</button>
+          <button class="filter" data-filter="identity">Corporate Identity</button>
+          <button class="filter" data-filter="logo">Logo</button>
+          <button class="filter" data-filter="marketing">Marketing Strategy</button>
+        </nav>
+      </section>
+    </article>
+
+    <article class="project" data-tags="print">
+      <section class="image-container">
+        <img class="image" src="../assets/img/typo-handout.png">
+      </section>
+      <section class="description-container">
+        <h2>Typography</h2>
+        <h3>2012</h3>
+        <p class="project__description">This is a handout I designed for my talk about typography. It was not designed to exhibit "good" typography but the different effects typography can have.</p>
+        <nav class="project__tags">
+          <button class="filter" data-filter="print">Print Design</button>
+        </nav>
       </section>
     </article>
 
